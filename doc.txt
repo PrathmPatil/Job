@@ -1,0 +1,41 @@
+npm init
+create server.js
+npm i express
+
+write server.js
+//imports
+const express = require('express')
+
+//rest object
+const app=express();
+
+//routes
+app.get("/",(req,res)=>{
+ res.send('<h1> welcome to job portal </h1>')
+})
+
+//listen
+app.listen(8080,()=>{
+    console.log('server running')
+})
+
+** node server.js
+
+install nodemon
+change scripts
+"start":"node server.js",
+"server":"nodemon server.js"
+npm run server
+
+remove require(express) ---common js
+and use import export ("type":"module") ---module js
+
+#import dotenv
+write your confidencial data portnumber,database, tokensecuritykey
+
+
+#mvc Module View Controller
+1)database related code
+2) frontend
+3)apis, bussiness logic
+
